@@ -1,0 +1,52 @@
+body {
+  background-color: #000;
+}
+
+.TIME {
+  width: 80%;
+  height: 350px;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  background-color: #000000; /* 背景颜色 */
+  border: 2px solid #fffefe;
+  background: rgba(255, 255, 255, 0.445); /* 透明背景 */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* 玻璃效果 */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+}
+
+.TIME ::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 15px;
+  background: rgba(203, 201, 201, 0.3); /* 发光的颜色 */
+  filter: blur(15px); /* 发光模糊 */
+  z-index: -1; /* 确保在盒子后面 */
+}
+
+.TIME h1 {
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #0c09c7;
+}
+
+.TIME .time_number_s {
+  font-size: 90px;
+  margin-top: 30px;
+  background: radial-gradient(circle, #ff0000, #00f7ff); /* 渐变色 */
+  -webkit-background-clip: text; /* 适用于 WebKit 浏览器 */
+  -webkit-text-fill-color: transparent; /* 使文本填充颜色透明 */
+}
+
+.TIME .time_number_b {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #000000;
+}
