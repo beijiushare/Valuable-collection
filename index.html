@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valuable Collection</title>
     <link rel="stylesheet" href="TIME.css" />
   </head>
+
   <body>
-    <div class="TIME">
-      <h1>TIME IS LIFE.</h1>
-      <div class="time_number_s" id="time_number_s"></div>
-      <div class="time_number_b" id="time_number_b"></div>
+    <div class="sidebar">
+      <h2>☰</h2>
+      <a href="#" onclick="showContent('home')" title="首页">♕</a>
+      <div class="line"></div>
+      <a href="#" onclick="showContent('about')" title="关于">©</a>
+      <div class="line"></div>
+      <a href="#" onclick="showContent('services')" title="服务">✂</a>
+      <div class="line"></div>
+      <a href="#" onclick="showContent('contact')" title="联系">✉</a>
+    </div>
+
+    <div class="main" id="mainContent">
+      <div class="content_box" id="content_box">
+        <div class="TIME" id="TIME">
+          <h1>TIME IS LIFE.</h1>
+          <div class="time_number_s" id="time_number_s"></div>
+          <div class="time_number_b" id="time_number_b"></div>
+        </div>
+      </div>
+      <div class="content_box" id="content_box">
+        <h1>TIME IS LIFE.</h1>
+      </div>
+      <div class="content_box" id="content_box">111</div>
+      <div class="content_box" id="content_box">
+        <iframe
+          src="https://beijiushare.github.io/"
+          title="Blog"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <footer>
+        <p>&copy; 2023 Valuable Collection. 版权所有.</p>
+      </footer>
     </div>
     <script src="TIME.js"></script>
   </body>
